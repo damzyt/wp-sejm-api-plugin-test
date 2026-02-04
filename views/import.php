@@ -53,6 +53,7 @@
 					Taksonomie
 				</a>
 			</div>
-		</div>
+		</main>
 	<?php endif; ?>
 </div>
+
