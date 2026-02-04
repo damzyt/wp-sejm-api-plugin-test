@@ -1,0 +1,94 @@
+
+:root {
+    --sejm-api-primary: #db0000;
+}
+
+.sejm-api-plugin-container {
+    padding: 20px 0px;
+    margin-left: -20px;
+}
+
+.sejm-api-container {
+    max-width: 760px;
+    margin: 0px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.sejm-api-container p:last-of-type {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.sejm-api-container:nth-child(2) {
+    margin-top: 20px;
+}
+
+.sejm-api-header-container {
+    background: white;
+    padding: 20px 0px;
+    margin-left: -20px;
+}
+
+.sejm-api-header {
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sejm-api-header h1 {
+    font-weight: 700;
+}
+
+.sejm-api-logo {
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    background: var(--sejm-api-primary);
+    border-radius: 10px;
+    color: white;
+}
+
+.sejm-api-import-button {
+    width: 100%;
+    height: 50px !important;
+    background: var(--sejm-api-primary) !important;
+    color: white !important;
+    font-size: 16px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#sejm-api-progress-container {
+    background: #f0f0f1 !important;
+}
+
+#sejm-api-progress-text {
+    color: #36383b;
+}
+
+#sejm-api-progress-fill {
+    opacity: 0.8; 
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.4em;
+}
+
+.sejm-api-notice {
+    background: #ffde85;
+    margin-top: 20px;
+}
+
+.sejm-api-warning {
+    background: #ffb1b1;
+}
