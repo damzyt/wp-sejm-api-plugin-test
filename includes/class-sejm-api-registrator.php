@@ -33,7 +33,7 @@ class Sejm_API_Registrator
 			'hierarchical'       => false,
 			'menu_position'      => 5, 
 			'menu_icon'          => 'dashicons-businessperson', 
-			'supports'           => [ 'title', 'thumbnail', 'custom-fields' ], 
+			'supports'           => ['title', 'thumbnail', 'custom-fields'], 
 			'show_in_rest'       => true, 
 		];
 
@@ -59,10 +59,10 @@ class Sejm_API_Registrator
 			'show_ui'           => true,
 			'show_admin_column' => true,
 			'query_var'         => true,
-			'rewrite'           => [ 'slug' => 'klub' ],
+			'rewrite'           => ['slug' => 'klub'],
 			'show_in_rest'      => true,
 		];
 
-		register_taxonomy( 'klub', [ 'posel' ], $taxonomy_args );
+		register_taxonomy('klub', ['posel'], $taxonomy_args);
 	}
 }
