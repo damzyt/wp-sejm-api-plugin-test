@@ -32,7 +32,6 @@ class Sejm_API
         add_filter('manage_posel_posts_columns', [$admin, 'add_custom_columns']);
         add_action('manage_posel_posts_custom_column', [$admin, 'render_custom_columns'], 10, 2);
         
-        // AJAX Import
         add_action('admin_enqueue_scripts', [$admin, 'enqueue_scripts']);
         add_action('wp_ajax_sejm_import_start', [$admin, 'ajax_start_import']);
         add_action('wp_ajax_sejm_import_process', [$admin, 'ajax_process_item']);
