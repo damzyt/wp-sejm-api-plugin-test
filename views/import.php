@@ -9,18 +9,19 @@
 	</header>
 </div>
 <div class="sejm-api-plugin-container">
-	<?php if ( 0 === $count_poslowie ) : ?>
+	<?php if (0 === $count_poslowie): ?>
 		<div class="notice notice-info is-dismissible" style="display: block;">
 			<p>W bazie nie ma jeszcze żadnych danych. Uruchom import, aby pobrać listę posłów i klubów.</p>
 		</div>
 	<?php endif; ?>
-	<?php if ( ! $acf_active ) : ?>
+
+	<?php if (!$acf_active): ?>
 		<main class="sejm-api-container sejm-api-warning">
 			<h2><span class="dashicons dashicons-warning" style="vertical-align: text-bottom; margin-right: 5px;"></span> Brak wymaganej wtyczki</h2>
 			<p>Do poprawnego działania importera wymagana jest wtyczka <strong>Advanced Custom Fields (ACF)</strong>.</p>
 			<p>Bez niej nie możemy zapisać dodatkowych pól (klub, data urodzenia, itp.). Zainstaluj i aktywuj ACF, aby kontynuować.</p>
 		</main>
-	<?php else : ?>
+	<?php else: ?>
 		<main class="sejm-api-container">
 			<h2>Zaimportuj aktualne dane o posłach (X kadencja) z API Sejmu RP</h2>
 			<p>Import obejmuje listę wszystkich posłów (wraz z danymi kontaktowymi, datą urodzenia, zawodem itp.) oraz informacje o klubach i kołach poselskich.</p>
